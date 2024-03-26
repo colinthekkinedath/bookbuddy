@@ -55,13 +55,13 @@ var requests, OpenLibrary;
 
     $(document).keyup('#booksearch', debounce(function(event) {
 	$('.bookmatch').empty();
-	//$('.bookmatch').addClass('loader');
+	$('.bookmatch').addClass('loader');
     }, 100, false));
     
     $(document).keyup('#booksearch', debounce(function(event) {
 	OpenLibrary.search($('#booksearch input').val(), function(results) {
 	    var match = results[0];
-	    //$('.bookmatch').removeClass('loader');
+	    $('.bookmatch').removeClass('loader');
 	    $('.bookmatch').append(
 		'<a href="https://openlibrary.org' + match.edition.key + '">' +
 		    '<img src="' + match.edition.cover_url + '">' +
