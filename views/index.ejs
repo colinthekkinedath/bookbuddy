@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang=""">
   <head>
     <title>Home</title>
     <link rel="stylesheet" href ="../assets/styles.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/static/search.js"></script>
   </head>
   <body>
     <div class="flex justify-center">
         <div class= "flex-col space-y-12 pt-5">
             <h1 class = "font-bold text-4xl top-6">identify any book in a second!</h1>
     
-            <form id="search" class="self-center">
+            <form id="booksearch" class="self-center">
                 <input name="query" type="text" placeholder="Search for a quote, text, or keywords" class="w-4/5 h-12 px-4 py-2 text-lg rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
             </form>
+
+            <div class="bookmatch">
+            </div>
     
         </div>
     </div>
