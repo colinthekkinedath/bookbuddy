@@ -33,6 +33,8 @@ var requests, OpenLibrary;
 	    requests.get(url, function(response) { callback(response.hits.hits) } );
 	},
     };
+	
+	module.exports = { OpenLibrary };
 
     var debounce = function (func, threshold, execAsap) {
 	var timeout;
