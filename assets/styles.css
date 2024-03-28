@@ -564,8 +564,8 @@ video {
   height: 3rem;
 }
 
-.w-4\/5 {
-  width: 80%;
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -629,7 +629,6 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
-
 .loader {
   width: 50px;
   aspect-ratio: 1;
