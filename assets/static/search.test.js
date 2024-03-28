@@ -37,4 +37,28 @@ describe("OpenLibrary API", () => {
 
     expect(callback).toHaveBeenCalledWith(mockResponse.hits.hits);
   });
+
+  test("search function with nonexistent query", () => {
+    const callback = jest.fn();
+    const mockResponse = {
+      hits: {
+        hits: []
+      }
+    };
+
+    $.get.mockImplementation((url, callback) => {
+        const deferred = {
+          done: function(fn) {
+            fn(mockResponse);
+            return deferred;
+          }
+        };
+        callback(mockResponse);
+        return deferred;
+      });
+
+    OpenLibrary.search("nonexistent query", callback);
+
+    expect(callback).toHaveBeenCalledWith([]);
+  });
 });
