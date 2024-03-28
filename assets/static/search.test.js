@@ -14,7 +14,7 @@ global.$ = $;
 const { requests, OpenLibrary } = require("./search.js");
 
 describe("OpenLibrary API", () => {
-  test("search function", () => {
+  test("search function with car", () => {
     const callback = jest.fn();
     const mockResponse = {
       hits: {
