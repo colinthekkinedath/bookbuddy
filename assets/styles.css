@@ -636,6 +636,6 @@ video {
   border-radius: 50%;
   border: 8px solid;
   border-color: #000 #0000;
-  animation: l1 1s infinite;
+  animation: l1 0.5s infinite;
 }
 @keyframes l1 {to{transform: rotate(.5turn)}}
