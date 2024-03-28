@@ -629,6 +629,7 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
+
 .loader {
   width: 50px;
   aspect-ratio: 1;
