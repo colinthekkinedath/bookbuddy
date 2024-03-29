@@ -12,6 +12,7 @@ inside the directory to download all the dependencies
 Use
 `npm start` 
 to run the project
+
 Use `localhost:3000` to run the project locally
 
 Run
